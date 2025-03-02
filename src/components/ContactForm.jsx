@@ -7,7 +7,7 @@ const ContactFooter = () => {
     <footer className='contact-footer'>
       <div className='footer-container'>
         <div className='header-logo'>
-        <img rel="icon" type="image/svg+xml" src="/vite.svg" alt="Nautics Logo" className='logo-img' />
+        {/* <img rel="icon" type="image/svg+xml" src="/vite.svg" alt="Nautics Logo" className='logo-img' /> */}
         <span className='logo-text-highlight'>Nautics</span>
         <span className='logo-text-sub'>HR Solutions</span>
         </div>

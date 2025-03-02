@@ -33,7 +33,7 @@ const Header = ({ scrollToSection }) => {
   return (
     <header className={`header ${isSticky ? 'sticky' : ''}`}>
       <div className='header-logo'>
-        <img rel="icon" type="image/svg+xml" src="/vite.svg" alt="Nautics Logo" className='logo-img' />
+        {/* <img rel="icon" type="image/svg+xml" src="/vite.svg" alt="Nautics Logo" className='logo-img' /> */}
         <span className='logo-text-highlight'>Nautics</span>
         <span className='logo-text-sub'>HR Solutions</span>
       </div>
