@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/web/' // Make sure this matches your GitHub repo name!
+  base: '/', // This is important for Vercel deployment
 });
