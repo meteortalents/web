@@ -1,0 +1,202 @@
+.header {
+  background: linear-gradient(to right, #1E3C72, #2A5298);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  height: 60px;
+  margin: 0;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+  scroll-behavior: auto;
+
+  /* background: linear-gradient(to right, #002B5B, #008080); */
+  /* background-image: url("https://bcassetcdn.com/assets/images/designcom/hero-banner-background/bg-pattern-wave.webp"); */
+  /* background: linear-gradient(to right, #43C6AC, #191654); */
+  /* background: linear-gradient(to right, #FF5F6D, #FFC371); */
+  /* background: linear-gradient(to right, #485563, #29323c); */
+}
+
+.header.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+}
+
+.logo-text-highlight {
+  color: rgb(245 181 19);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.logo-text-sub {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.header ul {
+  display: flex;
+  list-style: none;
+}
+
+.header li {
+  margin: 0 1rem;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-icon-white {
+  color: white;
+  margin-top: 7px
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  margin-top: 7px
+}
+
+.nav-menu {
+  display: flex;
+}
+
+body {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #1E3C72;
+    width: 100%;
+    text-align: center;
+    z-index: 999;
+  }
+
+  .nav-menu.open {
+    display: flex;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .nav-menu li {
+    margin: 1rem 0;
+  }
+}
+
+.header {
+    background: linear-gradient(to right, #1E3C72, #2A5298);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    height: 60px;
+    margin: 0;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+  
+  .header.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+  }
+  
+  .header-logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    align-self: center;
+  }
+  
+  .header ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .header li {
+    margin: 0 1rem;
+  }
+  
+  .header a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .nav-menu {
+    display: flex;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: block;
+    }
+  
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background: #1E3C72;
+      width: 100%;
+      text-align: center;
+      z-index: 999;
+    }
+  
+    .nav-menu.open {
+      display: flex;
+    }
+  
+    .nav-menu ul {
+      flex-direction: column;
+      padding: 0;
+    }
+  
+    .nav-menu li {
+      margin: 1rem 0;
+    }
+  }
+  
+  
+  

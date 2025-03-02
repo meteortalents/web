@@ -1,0 +1,49 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.header-title {
+  text-align: center;
+  color: #1E3C72;
+}
+
+.white-text {
+  color: antiquewhite;
+}
+
+.hero {
+    text-align: center;
+    background: linear-gradient(to right, #1E3C72, #2A5298);
+    color: white;
+    padding: 3rem 0;
+    /* background: linear-gradient(to right, #002B5B, #008080); */
+    /* background: linear-gradient(to right, #1E3C72, #2A5298); */
+    /* background-image: url("https://bcassetcdn.com/assets/images/designcom/hero-banner-background/bg-pattern-wave.webp"); */
+    /* background: linear-gradient(to right, #43C6AC, #191654); */
+    /* background: linear-gradient(to right, #FF5F6D, #FFC371); */
+    /* background: linear-gradient(to right, #485563, #29323c); */
+}
+
+.cta-button {
+    background: #DAA520;
+    padding: 0.75rem 2rem;
+    border: none;
+    color: #002B5B;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    background: #002B5B;
+    color: white;
+    padding: 1rem;
+}
+
+.contact-section {
+  background: linear-gradient(to right, #1E3C72, #2A5298);
+}
