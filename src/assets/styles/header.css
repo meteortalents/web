@@ -1,102 +1,95 @@
 .header {
-  background: linear-gradient(to right, #1E3C72, #2A5298);
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem;
-  box-sizing: border-box;
-  height: 60px;
-  margin: 0;
-  width: 100%;
-  transition: transform 0.5s ease-in-out;
-  scroll-behavior: auto;
-
-  /* background: linear-gradient(to right, #002B5B, #008080); */
-  /* background-image: url("https://bcassetcdn.com/assets/images/designcom/hero-banner-background/bg-pattern-wave.webp"); */
-  /* background: linear-gradient(to right, #43C6AC, #191654); */
-  /* background: linear-gradient(to right, #FF5F6D, #FFC371); */
-  /* background: linear-gradient(to right, #485563, #29323c); */
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  padding: 0.5rem 2%;
+  transition: all 0.3s ease-in-out;
 }
 
 .header.sticky {
-  position: fixed;
+  position: sticky;
   top: 0;
-  width: 100%;
-  z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transform: translateY(0);
+  z-index: 999;
 }
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #E6B800;
+}
+
 
 .header-logo {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
 }
 
 .logo-img {
-  width: 40px;
-  height: 40px;
+  height: 60px;
+  width: auto;
 }
 
 .logo-text-highlight {
-  color: rgb(245 181 19);
-  font-weight: bold;
   font-size: 1.5rem;
+  font-weight: 800;
+  color: #E6B800;
 }
 
-.logo-text-sub {
-  color: white;
-  font-weight: bold;
-  font-size: 1.5rem;
-}
 
-.header ul {
-  display: flex;
+.nav-links {
   list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-.header li {
-  margin: 0 1rem;
+.nav-links li {
+  cursor: pointer;
 }
 
-.header a {
-  color: white;
+.nav-links li a {
+  color: #2C3E50;
   text-decoration: none;
+  font-weight: bold;
 }
 
-.menu-icon-white {
-  color: white;
-  margin-top: 7px
+.nav-button {
+  background: #E6B800;
+  color: #2C3E50;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .menu-icon {
   display: none;
   cursor: pointer;
-  margin-top: 7px
 }
 
 .nav-menu {
   display: flex;
 }
 
-body {
-  margin: 0;
-}
-
 @media (max-width: 768px) {
   .menu-icon {
     display: block;
+    align-self: center;
   }
 
   .nav-menu {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px;
-    right: 0;
-    background: #1E3C72;
-    width: 100%;
+    top: 72px;
+    right: 5%;
+    background: #FDF6E3;
+    width: 90%;
     text-align: center;
-    z-index: 999;
+    box-shadow: 0 2px 5px rgba(212, 200, 200, 0.1);
+    border-radius: 10px;
   }
 
   .nav-menu.open {
@@ -112,91 +105,3 @@ body {
     margin: 1rem 0;
   }
 }
-
-.header {
-    background: linear-gradient(to right, #1E3C72, #2A5298);
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5rem;
-    box-sizing: border-box;
-    height: 60px;
-    margin: 0;
-    width: 100%;
-    transition: all 0.3s ease;
-  }
-  
-  .header.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transform: translateY(0);
-  }
-  
-  .header-logo {
-    font-weight: bold;
-    font-size: 1.5rem;
-    align-self: center;
-  }
-  
-  .header ul {
-    display: flex;
-    list-style: none;
-  }
-  
-  .header li {
-    margin: 0 1rem;
-  }
-  
-  .header a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .menu-icon {
-    display: none;
-    cursor: pointer;
-  }
-  
-  .nav-menu {
-    display: flex;
-  }
-  
-  body {
-    margin: 0;
-  }
-  
-  @media (max-width: 768px) {
-    .menu-icon {
-      display: block;
-    }
-  
-    .nav-menu {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 60px;
-      right: 0;
-      background: #1E3C72;
-      width: 100%;
-      text-align: center;
-      z-index: 999;
-    }
-  
-    .nav-menu.open {
-      display: flex;
-    }
-  
-    .nav-menu ul {
-      flex-direction: column;
-      padding: 0;
-    }
-  
-    .nav-menu li {
-      margin: 1rem 0;
-    }
-  }
-  
-  
-  

@@ -17,18 +17,13 @@ const servicesData = [
     icon: <FaChalkboardTeacher size={48} />, 
     title: 'RPO (3 Models)',
     description: 'End-to-end Recruitment Process Outsourcing models tailored to your business needs.'
-  },
-  {
-    icon: <FaUsersCog size={48} />, 
-    title: 'Payroll Services',
-    description: 'Efficient and compliant payroll management services to streamline your HR processes.'
   }
 ];
 
 const Services = () => {
   return (
     <section className="services-section">
-      <div className="header-title">
+      <div className="service-title">
         <h2>Our Services</h2>
       </div>
       <div className="services-container">
