@@ -27,20 +27,6 @@ const Careers = () => {
           </div>
         ))}
       </div>
-      <div className="careers-content">
-        <div className="careers-item">
-          <h3>Open Positions</h3>
-          <p>Find your perfect role and grow with us.</p>
-        </div>
-        <div className="careers-item">
-          <h3>Our Culture</h3>
-          <p>We value collaboration, innovation, and growth.</p>
-        </div>
-        <div className="careers-item">
-          <h3>Recruitment Process</h3>
-          <p>Our streamlined process ensures the right fit for every role.</p>
-        </div>
-      </div>
     </section>
   );
 };

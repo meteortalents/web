@@ -93,3 +93,10 @@
     align-items: center;
   }
 }
+
+
+.footer-section {
+  text-align: center;
+  color: white;
+  background-color: #31708E;
+}

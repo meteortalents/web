@@ -1,35 +1,18 @@
 import React from 'react';
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
-import '../assets/styles/footer.css'
+import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
+import logoPNG from '../assets/images/logo2.png';
+import "../assets/styles/footer.css"
 
 const ContactFooter = () => {
   return (
-    <footer className='contact-footer'>
+    <footer className='footer'>
       <div className='footer-container'>
-        <div className='header-logo'>
-        <img rel="icon" type="image/svg+xml" src="./vite.svg" alt="Nautics Logo" className='logo-img' />
-        <span className='logo-text-highlight'>Nautics</span>
-        <span className='logo-text-sub'>HR Solutions</span>
+        <div className='footer-logo'>
+          <img rel="icon" src={logoPNG} alt="Diverse Talent Solutions Logo" className='footer-img' />
+          <span className='footer-text-highlight'>Diverse Talent Solutions</span>
         </div>
-        <div className='footer-links'>
-          <div className='quick-links'>
-            <h4>Quick Links</h4>
-            <ul>
-              <li>About Us</li>
-              <li>Careers</li>
-              <li>Employer Home</li>
-              <li>Contact Us</li>
-            </ul>
-          </div>
-          <div className='support'>
-            <h4>Support</h4>
-            <ul>
-              <li>Help Center</li>
-              <li>Privacy Policy</li>
-              <li>Terms & Conditions</li>
-            </ul>
-          </div>
-        </div>
+
         <div className='social-media'>
           <h4>Connect with Us</h4>
           <div className='social-icons'>
@@ -39,6 +22,14 @@ const ContactFooter = () => {
             <FaLinkedin />
           </div>
         </div>
+
+        <div className='contact-info'>
+          <h4>Feel free to contact us for any inquiries or to schedule a consultation.</h4>
+          <p><FaEnvelope /> <a href='mailto:nikhil@diversetalentsolutions.com'>support@diversetalentsolutions.com</a></p>
+          <p><FaPhoneAlt /> <a href='tel:+919164940642'>+91 91649 40642</a>, <a href='tel:+919840671879'>98406 71879</a></p>
+          <p><FaMapMarkerAlt /> #New No. 767, Old No. 194, 2nd Floor, Velachery Main Rd, Selaiyur, Chennai-600073</p>
+        </div>
+
       </div>
     </footer>
   );

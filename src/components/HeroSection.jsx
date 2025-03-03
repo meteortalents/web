@@ -1,19 +1,10 @@
-// const HeroSection = () => {
-//     return (
-//       <section className="hero">
-//         <div className="hero-content">
-//           <h1>Bridging Talent with Opportunities</h1>
-//           <p className="white-text">Your trusted partner in connecting people and businesses.</p>
-//           <button className="cta-button">Explore Our Services</button>
-//         </div>
-//       </section>
-//     );
-//   };
-  
-//   export default HeroSection;
-import '../assets/styles/herosection.css'
+import '../assets/styles/herosection.css';
 
-const HeroSection = () => {
+const HeroSection = ({ scrollToSection }) => {
+  const handleNavClick = (section) => {
+    scrollToSection(section);
+  };
+
   return (
     <section className="hero-section">
       <div className="hero-content">
@@ -23,7 +14,7 @@ const HeroSection = () => {
         <p className="hero-subtitle">
           Your trusted partner in connecting people and businesses.
         </p>
-        <button className="hero-button">
+        <button className="hero-button" onClick={(e) => { e.preventDefault(); handleNavClick('contact'); }}>
           Get Started
         </button>
       </div>
